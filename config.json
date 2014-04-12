@@ -1,0 +1,34 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Brandon Morrison dot com",
+    "owner": "Brandon Morrison",
+    "description": "Drupal/Javascript webdev ramblings. Pay no attention to the man behind the curtain."
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-nunjucks"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "template": "blog-index.html",
+    "perPage": 3,
+    "first": "index.html",
+    "filename": "articles/page/%d/index.html"
+  },
+  "nunjucks": {  
+    "filterdir": "filters",
+    "filters": ["moment", "teaser"]
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block pagetitle %}Brandon Morrison{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <!--
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>-->
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:100,400,700|Raleway:400,700|Anonymous+Pro">
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/7.5/styles/default.min.css">
+        <link rel="stylesheet" href="/style/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <!--<a id="navigation-reveal" href="#"><object class="top-icon" data="/img/globe-icon-front.svg" type="image/svg+xml"></object></a>-->
+            <div class="banner"><object data="/img/banner.svg" type="image/svg+xml"></object></div>
+        </header>
+        <section id="content">
+          <section class="sidebar">
+            <h2 class="site-title"><a href="/">Brandon Morrison</a></h2>
+            <div class="mugshot">
+              <img src="/img/brandon-mugshot.png" alt="" />
+            </div>
+            <p>Brandon Morrison is a web developer with a strong interest in maps. Sometimes he presents on his work. Other times he blogs interesting stuff. He open sources most of his code.</p>
+            <p>If you're ever in the DC area, look him up.</p>
+            <nav>
+              <a {% block blognavclass %} {% endblock %}href="/">Blog</a>
+              <!--<a {% block lifestreamnavclass %} {% endblock %}href="/lifestream/">Lifestream</a>-->
+              <a {% block projectnavclass %} {% endblock %}href="/projects/">Projects</a>
+              <!--<a {% block presentationnavclass %} {% endblock %}href="/presentations/">Presentations</a>-->
+            </nav>
+            <div class="social">
+              <a class="social-twitter" href="https://twitter.com/fillerwriter"><object data="/img/twitter.svg" type="image/svg+xml"></object> Twitter</a>
+              <a class="social-github" href="https://github.com/fillerwriter"><object data="/img/github.svg" type="image/svg+xml"></object> Github</a>
+              <a class="social-linkedin" href="http://www.linkedin.com/in/fillerwriter"><object data="/img/linkedin.svg" type="image/svg+xml"></object> LinkedIn</a>
+              <a href="http://www.flickr.com/photos/fillerwriter"><object data="/img/flickr.svg" type="image/svg+xml"></object> Flickr</a>
+            </div>
+          </section>
+          <section class="main">
+            {% block content %}
+            <p>Um, where's the content, yo?.</p>
+            {% endblock %}
+          </section>
+        </section>
+        <footer>
+            Brandon Morrison | <a href="/feed.xml">RSS</a>
+            <nav>
+              <a {% block blognavclass %} {% endblock %}href="/">Blog</a>
+              <!--<a {% block lifestreamnavclass %} {% endblock %}href="/lifestream/">Lifestream</a>-->
+              <a {% block projectnavclass %} {% endblock %}href="/projects/">Projects</a>
+              <!-- <a {% block presentationnavclass %} {% endblock %}href="/presentations/">Presentations</a>-->
+            </nav>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="http://yandex.st/highlightjs/7.5/highlight.min.js"></script>
+        <script src="/lib/Baseline.js/baseline.js"></script>
+        <script src="/js/sitewide.js"></script>
+        {% block pagescripts %}{% endblock %}
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+    </body>
+</html>

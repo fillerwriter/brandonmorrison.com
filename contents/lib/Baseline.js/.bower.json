@@ -1,0 +1,13 @@
+{
+  "name": "Baseline.js",
+  "homepage": "https://github.com/daneden/Baseline.js",
+  "_release": "75a85cb68a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "75a85cb68a29b2c4725e76698caafc8128a0ad48"
+  },
+  "_source": "git://github.com/daneden/Baseline.js.git",
+  "_target": "*",
+  "_originalSource": "daneden/Baseline.js"
+}

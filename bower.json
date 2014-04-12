@@ -1,0 +1,11 @@
+{
+  "name": "brandonmorrisondotcom",
+  "directory": "contents/lib",
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2",
+    "moment": "~2.3.1",
+    "nunjucks": "~1.0.1",
+    "Baseline.js": "daneden/Baseline.js"
+  }
+}

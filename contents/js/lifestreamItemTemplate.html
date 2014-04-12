@@ -1,0 +1,8 @@
+<div class="lifestream-icon">
+  <img src="http://placekitten.com/50/50" alt="placeholder" />
+</div>
+<div class="content">
+  {% if title %}<h3>{{ title }}</h3>{% endif %}
+  {{ content }}
+  <div class="date">{{ date | moment }}</div>
+</div>

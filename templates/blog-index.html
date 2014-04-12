@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% for article in articles %}
+    <h2 class="article-title"><a href="{{article.url}}">{{ article.title }}</a></h2>
+    <aside class="meta">
+      {{ article.date|moment }}
+    </aside>
+    <div class="article-content">
+      {{ article.html|teaser }}
+      {{ article.teaserlink }}
+      {% if article.metadata.teaserlink == true %}<p class="more"><a href="{{ article.url }}">Read More &raquo;</a></p>{% endif %}
+    </div>
+  {% endfor %}
+  <div class="pager">
+    {% if prevPage %}
+      <a href="{{ prevPage.url }}">Prev</a>
+    {% endif %}
+    {% if nextPage %}
+      <a href="{{ nextPage.url }}">Next</a>
+    {% endif %}
+  </div>
+{% endblock %}
